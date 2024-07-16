@@ -1,0 +1,101 @@
+.footer {
+    width: 100%;
+    height: 60vh;
+    padding: 50px 100px;
+    background-color: blueviolet;
+    margin-top: 30px;
+}
+
+.footer-box {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.footer-img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-subitem {
+
+    display: flex;
+    gap: 40px;
+    background: blueviolet;
+    padding: 10px 0;
+}
+
+.footer-img {
+    color: blueviolet;
+    border-radius: 5px;
+
+}
+
+.footer-img:hover {
+    background-color: blueviolet;
+    color: blueviolet;
+    padding: 2px;
+    
+}
+
+.footer-text {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.footer-sublink {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.footer-link {
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.footer-item {
+    padding: 8px 0;
+}
+.footer-link:hover{
+    color: rgb(22, 9, 34);
+    transition: 0.7s;
+   
+}
+.footer-span {
+    color: white  ;   
+    font-size: 40px;
+}
+.footer_item{
+   padding: 10px 0; 
+}
+.footer-sublink:hover{
+    color: rgb(22, 9, 34);
+    transition: 0.5s;
+}
+.footer-box{
+   border-bottom: 1px solid white;
+ padding-bottom: 10px;
+}
+.footer-text-a{
+    color: white;
+    font-size: 20px;
+}
+.footer-link-a{
+    color: white;
+    font-size: 15px;
+}
+.footer-subbox{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 15px 0;
+}
+.footer-link-a:hover{
+    color: rgb(22, 9, 34);
+    transition: 0.5s;
+}
+.footer-text-a:hover{
+    color: rgb(22, 9, 34);
+    transition: 0.5s;
+}

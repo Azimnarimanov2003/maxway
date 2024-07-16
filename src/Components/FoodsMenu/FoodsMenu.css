@@ -1,0 +1,73 @@
+
+.foodsMenu-item{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    
+    text-decoration: none;
+
+}
+.foodsMenu-name .navLink{
+    font-size: 1.5rem;
+    font-weight: 400px;
+    color: blueviolet;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.foodsMenu-name :hover{
+    background-color: blueviolet;
+    color: white;
+    transition: 1s;
+    border-radius: 2px;
+    
+    
+}
+.foodsMenu-list{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    text-decoration: none;
+}
+ .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.foodsMenu-box{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.foodsMenu{
+    background-color: whitesmoke;
+    box-shadow: 1px 3px 2px rgb(134, 130, 200);
+    margin: 20px 0;
+}
+.foodsMenu-enter{
+    font-size: 1.5rem;
+    font-weight: 400px;
+    color: blueviolet;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+.foodsMenu-enter:hover{
+    background-color: blueviolet;
+    color: white;
+    transition: 0.7s;
+}
+
+.foodsMenu-subname {
+ color: rgb(66, 8, 242);   
+ font-size: 40px;
+}
+.foodsMenu-img{
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+}

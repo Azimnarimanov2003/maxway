@@ -1,0 +1,37 @@
+.filial-link{
+display: flex;
+align-items: center;
+gap: 200px;
+width: 1200px !important;
+margin: 30px 0;
+padding:  50px   70px;
+height: 80px;
+background-color: white;
+box-shadow:0.5px 0.5px 1px #1b1a1a !important;
+color: black;
+border-radius: 10px;
+}
+
+.filial{
+    background-color:#f6f6f6;
+   
+    height: 100%;
+
+}
+.filial-item{
+    padding: 14px 0;
+}
+.filial-title{
+    font-size: 20px;
+    font-weight: 600;
+color: black;
+}
+.filial-text{
+    font-size: 16px;
+    padding: 8px 0;
+color:  black;
+}
+.filial-subtext{
+    font-size: 14px;
+    color: rgb(104, 89, 89);
+}

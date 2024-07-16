@@ -1,0 +1,108 @@
+.navbar-item{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    
+    text-decoration: none;
+
+}
+.navbar-name .navLink{
+    font-size: 1.5rem;
+    font-weight: 400px;
+    color: blueviolet;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.navbar-name :hover{
+    background-color: blueviolet;
+    color: white;
+    transition: 1s;
+    border-radius: 2px;
+    
+    
+}
+.navbar-list{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    text-decoration: none;
+}
+ .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.navbar-box{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navbar{
+    background-color: whitesmoke;
+    box-shadow: 1px 3px 2px rgb(134, 130, 200);
+    margin: 20px 0;
+}
+.navbar-enter{
+    font-size: 1.5rem;
+    font-weight: 400px;
+    color: blueviolet;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+.navbar-enter:hover{
+    background-color: blueviolet;
+    color: white;
+    transition: 0.7s;
+}
+
+.navbar-subname {
+ color: rgb(66, 8, 242);   
+ font-size: 40px;
+}
+.navbar-img{
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+}
+.navbar-input-name{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar-input-nomer{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.modal-box{
+    display: flex;
+    align-items: center;
+   gap: 10px;
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+.modal-name{
+    font-size: 1.5rem;
+    font-weight: 400px;
+    color: blueviolet;
+
+}
+.modal-text {
+font-size: 16px;
+color: black;
+}
+.modal-btn{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+   padding: 10px 20px;
+    
+}

@@ -1,0 +1,38 @@
+/* Styles for slick-dots (navigation dots) */
+.slick-dots {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 965px !important; /* Adjust width as needed */
+}
+
+/* Styles for individual pictures/items in the slider */
+.picture {
+    width: 250px !important; /* Fixed width for each item */
+    height: 120px !important; /* Fixed height for each item */
+    gap: 2px !important; /* Adjust gap between items */
+    box-shadow: 1px 1px 1px rgb(118, 107, 107);
+    border-radius: 4px;
+}
+
+/* Styles for images within the slider */
+.img {
+    width: 100%; /* Ensure images fill their container */
+    height: 430px !important; /* Fixed height for each image */
+    object-fit: cover; /* Maintain aspect ratio */
+    padding: 5px 10px; /* Adjust padding as needed */
+}
+/* Styles for slick-dots (navigation dots) */
+
+
+.picture {
+    width: 250px !important; 
+    height: 120px !important; 
+    gap: 2px !important; 
+    box-shadow: 1px 1px 1px rgb(118, 107, 107);
+    border-radius: 4px;
+}
+
+.home{
+    margin-bottom: 150px;
+}
