@@ -1,0 +1,41 @@
+    {  
+     
+      "header": {
+        "title": "Home",
+        "title1": "About",
+        "title2": "Branch",
+        "title3": "Contact",
+        "text": "Welcome",
+        "text1": "Enter your phone number",
+        "text2": "Enter"
+
+      },
+
+      "Card" : {
+        "title1": "Lavash",
+        "title2": "Desert",
+        "title3": "Pizza",
+        "title4": "Hot-dog",
+        "title5": "Fries",
+        "title6": "Drink",
+        "title7": "Burger"
+      },
+      "Footer": {
+        "title1": "Join us",
+        "title2": "Order by number",
+        "title3": "© 2020–2022, LLC 'IT-TIME', official website",
+        "title4": "Developed by Azim"
+      }, 
+      "burger" : {
+        "title1": " Burger ",
+        "text1":   "  Bread: Typically, burger buns or ",
+        "title3": "7$ "
+        
+      },
+      
+        "card": {
+          "title": "Order Now"
+        }
+      
+      
+}

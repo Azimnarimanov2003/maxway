@@ -48,9 +48,7 @@ const  pizza5= {
     <Card data={pizza4}/>
     <Card data={pizza5}/>
     <Card data={pizza3}/>
-    <Card data={pizza1}/>
-    <Card data={pizza2}/>
-    <Card data={pizza1}/>
+ 
     </div>
     </div>
   )

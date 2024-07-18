@@ -47,12 +47,8 @@ const desert4 = {
       <Card  data={desert1}/>
       <Card  data={desert2}/>
       <Card  data={desert3}/>
-      <Card  data={desert4}/>
-      <Card  data={desert}/>
-      <Card  data={desert1}/>
-      <Card  data={desert2}/>
-      <Card  data={desert3}/>
-      <Card  data={desert4}/>
+      
+   
     
       </div>
       </div>

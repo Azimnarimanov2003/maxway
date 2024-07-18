@@ -1,0 +1,35 @@
+ {
+  "header": {
+    "title": "Bosh sahifa",
+    "title1": "Haqida",
+    "title2": "Filial",
+    "title3": "Aloqa",
+    "text": "Xush kelibsiz",
+    "text1": "Telefon raqamingizni kiriting",
+    "text2": "Kirish" 
+  },
+  "Card": {
+    "title1": "Lavash",
+    "title2": "Desert",
+    "title3": "Pizza",
+    "title4": "Xot-dog",
+    "title5": "Fri",
+    "title6": "Ichimlik",
+    "title7": "Burger"
+  }, 
+   "Footer": {
+    "title1": "Bizga qo'shiling",
+    "title2": "Raqam orqali buyurtma bering",
+    "title3": "© 2020–2022, MCHJ 'IT-TIME', rasmiy sayt",
+    "title4": "Azim tomonidan ishlab chiqilgan"
+  },
+  "burger": {
+    "title1": "Burger",
+    "text1": "Non: Odatda burger noni yoki sandvich noni ishlatiladi. Go'sht (pishgan go'sht) — bu burgerning asosiy.",
+    "title3": " 82 ming "
+},
+"card": {
+  "title": "Buyurtma berish"
+}
+
+}

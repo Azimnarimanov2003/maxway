@@ -54,10 +54,7 @@ const free5= {
     <Card data={free3}/>
     <Card data={free4}/>
     <Card data={free5}/>
-    <Card data={free4}/>
-    <Card data={free2}/>
-    <Card data={free}/>
-    <Card data={free5}/>
+ 
     </div>
     </div>
   )

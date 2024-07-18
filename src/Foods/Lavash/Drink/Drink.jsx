@@ -46,11 +46,7 @@ const drink4= {
     <Card data={drink1} />
     <Card data={drink2} />
     <Card data={drink3} />
-    <Card data={drink4} />
-    <Card data={drink} />
-    <Card data={drink1} />
-    <Card data={drink3} />
-    <Card data={drink} />
+ 
 
     </div>
     </div>

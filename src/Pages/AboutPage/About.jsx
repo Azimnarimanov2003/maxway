@@ -1,8 +1,10 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
+// import Navbar from '../../Components/Navbar/Navbar'
 import './About.css'
 import kompany from '../../../public/kompany.png'
 const About = () => {
+
+
   return (
     <div>
 <div className="about">

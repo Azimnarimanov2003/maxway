@@ -1,32 +1,30 @@
-import React from 'react'
-import './Card.css'
-import rasm1 from "../../public/salat.png"
+import React from 'react';
+import './Card.css';
+import rasm1 from "../../public/salat.png";
+import { useTranslation } from 'react-i18next';
 
+const Card = ({ data }) => {
+  const { t } = useTranslation();
 
-const Card = ({data}) => {
   return (
     <>
-
-<div className="card">
-    <div className="container">
-
-        <div className="card-box">
-           <img src={data.img} alt="photo" className="card-img" />
-           <h3 className="card-name">
-          {data.title}  Burger 
-           </h3>
-           <p className="card-text"> Lorem, ipsum.</p>
-           <li className="card-item">
-            <p className="card-money"> 3.19$</p>
-            <button className="card-button">  Заказывайте </button>
-           </li>
+      <div className="card">
+        <div className="container">
+          <div className="card-box">
+            <img src={data.img} alt="photo" className="card-img" />
+            <h3 className="card-name">
+              {data.title}
+            </h3>
+            <p className="card-text">{data.text}</p>
+            <li className="card-item">
+              <p className="card-money">{data.price}$</p>
+              <button className="card-button">{t('card.title')}</button>
+            </li>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
     </>
-  )
+  );
 }
 
-
-
-export default Card
+export default Card;

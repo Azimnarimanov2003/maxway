@@ -51,8 +51,7 @@ const  xotdok5= {
     <Card data={xotdok5}/>
     <Card data={xotdok3}/>
     <Card data={xotdok}/>
-    <Card data={xotdok4}/>
-    <Card data={xotdok}/>
+
 
     </div>
     </div>

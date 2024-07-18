@@ -4,7 +4,16 @@ import telegram from "../../.././public/telegram1.png"
 import telegram1 from "../../.././public/instagram1.png"
 import telegram2 from "../../.././public/twetter.png"
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import i18n from '../../i18next'
 const Footer = () => {
+    
+    const {t , i18next} = useTranslation();
+const handLanguage = (lang) => {
+    i18n.changeLanguage(lang.target.value);
+}
+
+    
     return (
         <>
         <div className="footer">
@@ -15,21 +24,21 @@ const Footer = () => {
                             <a href="#" className="footer-link">  <span className='footer-span'>SFood</span> </a>
                         </li>
                         <li className="footer-item">
-                            <a href="#" className="footer-link">Home</a>
+                            <a href="#" className="footer-link"></a>
                         </li>
                         <li className="footer-item">
-                            <a href="#" className="footer-link">About</a>
+                            <a href="#" className="footer-link">{t('header.title')}</a>
                         </li>
                         <li className="footer-item">
-                            <a href="#" className="footer-link"> Branch</a>
+                            <a href="#" className="footer-link"> {t('header.title1')}</a>
                         </li>
                         <li className="footer-item">
-                            <a href="#" className="footer-link">Conact</a>
+                            <a href="#" className="footer-link">{t('header.title2')}</a>
                         </li>
                     </ul>
                     <ul className="footer-sublist">
                         <li className="footer-subitem">
-                           <p className="footer-text">Присоединяйтесь к нам</p> 
+                           <p className="footer-text">{t('Footer.title1')}</p> 
                             
                         </li>
                         <li className="footer-subitem">
@@ -40,7 +49,7 @@ const Footer = () => {
                     </ul>
                     <ul className="footer_list">
                         <li className="footer_item">
-                            <p className="footer-text">Заказывайте по номеру
+                            <p className="footer-text">{t('Footer.title2')}
                             </p>
                         </li>
                         <li className="footer_item">
@@ -52,8 +61,8 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-subbox">
-                    <p className="footer-text-a">© 2020–2022, ООО «IT-TIME», официальный сайт</p>
-                    <a href="mailto:narimonovazim@gmail.com" className="footer-link-a">Developed by Azim</a>
+                    <p className="footer-text-a">{t('Footer.title3')}</p>
+                    <a href="mailto:narimonovazim@gmail.com" className="footer-link-a">{t('Footer.title4')}</a>
                 </div>
             </div>
         </div>

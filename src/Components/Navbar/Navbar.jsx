@@ -2,8 +2,14 @@ import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+  const handLanguage = (lang) => {
+    i18n.changeLanguage(lang.target.value);
+  };
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [name, setName] = useState("");
   const [nomer, setNomer] = useState("");
@@ -20,7 +26,8 @@ const Navbar = () => {
     setIsModalOpen(false);
   };
 
-  const sendMessange = () => {
+  const sendMessange = (e) => {
+    e.preventDefault();
     const token = "7491679368:AAGQfmHuOXm2dJ14WpYOlVjt_1SDLeZieSY";
     const chat_id = "2029939556";
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
@@ -39,6 +46,7 @@ const Navbar = () => {
     .then(res => res.json())
     .then(res => {
       alert("Xabar yuborildi!");
+      setIsModalOpen(false);
     })
     .catch(err => {
       console.log(err);
@@ -54,25 +62,32 @@ const Navbar = () => {
               <p className="navbar-subname">SFood</p>
             </li>
             <li className="navbar-item">
-              <p className="navbar-name"><NavLink className="navLink" to={'/'}>Home</NavLink></p>
-              <p className="navbar-name"><NavLink className="navLink" to={'/about'}>About</NavLink></p>
-              <p className="navbar-name"><NavLink className="navLink" to={'/branch'}>Branch</NavLink></p>
-              <p className="navbar-name"><NavLink className="navLink" to={'/contact'}>Contact</NavLink></p>
+              <p className="navbar-name"><NavLink className="navLink" to={'/'}>{t('header.title')}</NavLink></p>
+              <p className="navbar-name"><NavLink className="navLink" to={'/about'}>{t('header.title1')}</NavLink></p>
+              <p className="navbar-name"><NavLink className="navLink" to={'/branch'}> {t('header.title2')}</NavLink></p>
+              <p className="navbar-name"><NavLink className="navLink" to={'/contact'}>{t('header.title3')}</NavLink></p>
+            </li>
+            <li className="navbar-item">
+              <select name="" id="" onChange={handLanguage} > 
+                <option value="uz">Uzb</option>
+                <option value="en">Eng</option>
+                <option value="ru">Rus</option>
+              </select>
             </li>
           </ul>
           <Button type="primary" onClick={showModal}>
-            Enter
+            {t('header.text2')}
           </Button>
           <Modal title="" visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-            <div className="modal-box">
-              <h3 className="modal-name">Добро пожаловать</h3>
-              <p className="modal-text">Войдите с вашим номером телефона</p>
-              <label htmlFor="Ism"></label>
-              <input type="text" className="navbar-input-name" placeholder="Ism" onChange={(e) => setName(e.target.value)} />
-              <label htmlFor="Telefon raqam"></label>
-              <input type="Nomer" className="navbar-input-nomer" placeholder="+998901234567" onChange={(e) => setNomer(e.target.value)} />
-              <button className="modal-btn" onClick={sendMessange}>Enter</button>
-            </div>
+            <form className="modal-box" onSubmit={sendMessange}>
+              <h3 className="modal-name">{t('header.text')}</h3>
+              <p className="modal-text">{t('header.text1')}</p>
+              <label htmlFor="name"></label>
+              <input type="text" className="navbar-input-name" placeholder="Name" required onChange={(e) => setName(e.target.value)} />
+              <label htmlFor="nomer"></label>
+              <input type="text" className="navbar-input-nomer" placeholder="+998901234567" required onChange={(e) => setNomer(e.target.value)} />
+              <button type="submit" className="modal-btn">{t('header.text2')}</button>
+            </form>
           </Modal>
         </div>
       </div>
